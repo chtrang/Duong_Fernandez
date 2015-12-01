@@ -1,0 +1,28 @@
+<div class="row">
+	<nav class="span12">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<ul class="nav navbar-nav">
+					<li class="divider-vertical"></li>
+
+					<%# Books %>
+					<li><%= link_to "Library Online DUONG FERNANDEZ".html_safe, root_path %></li>
+					<li><%= link_to "HOME".html_safe, root_path %></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Books</a>
+						<ul class="dropdown-menu">
+							<li><%= link_to "<i class=\"icon-th-list\"></i> Available books".html_safe, available_books_path %></li>
+							<li><%= link_to "<i class=\"icon-th-list\"></i> Reserved books".html_safe, reserved_books_path %></li>
+							<li><%= link_to "<i class=\"icon-plus\"></i> Add".html_safe, new_book_path %></li>
+						</ul>
+					</li>
+					<li><%= link_to 'Contact us'.html_safe, contact_path %></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+        			<li><%= link_to 'Log Out',destroy_user_session_path, method: :delete %></li>
+      			</ul>
+
+			</div>
+		</div>
+	</nav>
+</div>
