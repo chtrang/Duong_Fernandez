@@ -36893,3 +36893,219 @@ Processing by BooksController#index as HTML
   Rendered layouts/_header.html.erb (0.4ms)
   Rendered layouts/_messages.html.erb (0.1ms)
 Completed 200 OK in 62ms (Views: 58.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2015-12-01 16:07:21 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/_books.html.erb (13.5ms)
+  Rendered books/index.html.erb within layouts/application (17.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 160ms (Views: 124.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2015-12-01 16:07:22 +0100
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-12-01 16:07:22 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-01 16:07:22 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 16:07:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 16:07:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 16:07:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 16:07:22 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2015-12-01 16:07:22 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-12-01 16:07:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 16:07:22 +0100
+
+
+Started GET "/books/3/edit" for 127.0.0.1 at 2015-12-01 16:07:23 +0100
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBook Load (1.2ms)[0m  SELECT  "books".* FROM "books"  WHERE "books"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered books/_form.html.erb (460.1ms)
+  Rendered books/edit.html.erb within layouts/application (462.0ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 524ms (Views: 516.0ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/books/3" for 127.0.0.1 at 2015-12-01 16:07:27 +0100
+Processing by BooksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSy3d0PdvfXopPQ2ut1awBb49GazBFH4442QrpA6WVI=", "book"=>{"title"=>"Titre", "author"=>"Auteur", "synopsis"=>"Il était une fois", "note"=>"10", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fe32de383a8 @tempfile=#<Tempfile:/tmp/RackMultipart20151201-28200-1qw0td9>, @original_filename="Capture du 2015-11-30 10:51:12.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[cover]\"; filename=\"Capture du 2015-11-30 10:51:12.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Modifier ce(tte) Book", "id"=>"3"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books"  WHERE "books"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: PATH=/usr/bin/:$PATH; file -b --mime '/tmp/bfb8fcaf16cfd81c58503507e9452bbc20151201-28200-16usci6.png'
+Command :: PATH=/usr/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/7c1841ea440a75b6dc8dc64e05638cd220151201-28200-12yh8qg.png[0]' 2>/dev/null
+Command :: PATH=/usr/bin/:$PATH; identify -format %m '/tmp/7c1841ea440a75b6dc8dc64e05638cd220151201-28200-12yh8qg.png[0]'
+Command :: PATH=/usr/bin/:$PATH; convert '/tmp/7c1841ea440a75b6dc8dc64e05638cd220151201-28200-12yh8qg.png[0]' -auto-orient -resize "200x100>" '/tmp/ad4d3161baf14d5d2014c230a31c569f20151201-28200-w4gftd'
+Command :: PATH=/usr/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/7c1841ea440a75b6dc8dc64e05638cd220151201-28200-12yh8qg.png[0]' 2>/dev/null
+Command :: PATH=/usr/bin/:$PATH; identify -format %m '/tmp/7c1841ea440a75b6dc8dc64e05638cd220151201-28200-12yh8qg.png[0]'
+Command :: PATH=/usr/bin/:$PATH; convert '/tmp/7c1841ea440a75b6dc8dc64e05638cd220151201-28200-12yh8qg.png[0]' -auto-orient -resize "100x" -crop "100x50+0+3" +repage '/tmp/ad4d3161baf14d5d2014c230a31c569f20151201-28200-1w11sit'
+  [1m[36mBook Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "books"  WHERE ("books"."title" = 'Titre' AND "books"."id" != 3) LIMIT 1[0m
+Command :: PATH=/usr/bin/:$PATH; file -b --mime '/tmp/bfb8fcaf16cfd81c58503507e9452bbc20151201-28200-1ogr5dz.png'
+  [1m[35mSQL (0.3ms)[0m  UPDATE "books" SET "cover_file_name" = ?, "cover_updated_at" = ?, "updated_at" = ? WHERE "books"."id" = 3  [["cover_file_name", "Capture_du_2015-11-30_10_51_12.png"], ["cover_updated_at", "2015-12-01 15:07:27.680625"], ["updated_at", "2015-12-01 15:07:27.998672"]]
+[paperclip] deleting /home/duong/Documents/Ruby_On_Rails/public/system/books/covers/000/000/003/original/Capture_du_2015-11-30_10_51_12.png
+[paperclip] deleting /home/duong/Documents/Ruby_On_Rails/public/system/books/covers/000/000/003/medium/Capture_du_2015-11-30_10_51_12.png
+[paperclip] deleting /home/duong/Documents/Ruby_On_Rails/public/system/books/covers/000/000/003/thumb/Capture_du_2015-11-30_10_51_12.png
+  [1m[36m (140.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/books/3
+Completed 302 Found in 483ms (ActiveRecord: 141.1ms)
+
+
+Started GET "/books/3" for 127.0.0.1 at 2015-12-01 16:07:28 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books"  WHERE "books"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered books/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 81ms (Views: 76.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2015-12-01 16:07:28 +0100
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-12-01 16:07:28 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-01 16:07:28 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 16:07:28 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 16:07:28 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 16:07:28 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2015-12-01 16:07:28 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-12-01 16:07:28 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 16:07:28 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 16:07:28 +0100
+
+
+Started GET "/books" for 127.0.0.1 at 2015-12-01 16:07:30 +0100
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/_books.html.erb (4.9ms)
+  Rendered books/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 73ms (Views: 71.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books/9/edit" for 127.0.0.1 at 2015-12-01 16:07:55 +0100
+Processing by BooksController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books"  WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered books/_form.html.erb (8.4ms)
+  Rendered books/edit.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 72ms (Views: 66.9ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/books/9" for 127.0.0.1 at 2015-12-01 16:07:59 +0100
+Processing by BooksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GSy3d0PdvfXopPQ2ut1awBb49GazBFH4442QrpA6WVI=", "book"=>{"title"=>"zfqrsdfrdsgfrqrsdgverfds", "author"=>"refgrreg", "synopsis"=>"refgvefgv", "note"=>"10", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fe32ce95270 @tempfile=#<Tempfile:/tmp/RackMultipart20151201-28200-gr1dfv>, @original_filename="Capture du 2015-11-30 10:51:12.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"book[cover]\"; filename=\"Capture du 2015-11-30 10:51:12.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Modifier ce(tte) Book", "id"=>"9"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books"  WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: PATH=/usr/bin/:$PATH; file -b --mime '/tmp/bfb8fcaf16cfd81c58503507e9452bbc20151201-28200-vzpdf5.png'
+Command :: PATH=/usr/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/7c1841ea440a75b6dc8dc64e05638cd220151201-28200-1od74wd.png[0]' 2>/dev/null
+Command :: PATH=/usr/bin/:$PATH; identify -format %m '/tmp/7c1841ea440a75b6dc8dc64e05638cd220151201-28200-1od74wd.png[0]'
+Command :: PATH=/usr/bin/:$PATH; convert '/tmp/7c1841ea440a75b6dc8dc64e05638cd220151201-28200-1od74wd.png[0]' -auto-orient -resize "200x100>" '/tmp/e107def2575a257ceedd39b8c1e6595520151201-28200-vs3ooz'
+Command :: PATH=/usr/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/7c1841ea440a75b6dc8dc64e05638cd220151201-28200-1od74wd.png[0]' 2>/dev/null
+Command :: PATH=/usr/bin/:$PATH; identify -format %m '/tmp/7c1841ea440a75b6dc8dc64e05638cd220151201-28200-1od74wd.png[0]'
+Command :: PATH=/usr/bin/:$PATH; convert '/tmp/7c1841ea440a75b6dc8dc64e05638cd220151201-28200-1od74wd.png[0]' -auto-orient -resize "100x" -crop "100x50+0+3" +repage '/tmp/e107def2575a257ceedd39b8c1e6595520151201-28200-1qdtla7'
+  [1m[36mBook Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "books"  WHERE ("books"."title" = 'zfqrsdfrdsgfrqrsdgverfds' AND "books"."id" != 9) LIMIT 1[0m
+Command :: PATH=/usr/bin/:$PATH; file -b --mime '/tmp/bfb8fcaf16cfd81c58503507e9452bbc20151201-28200-c248is.png'
+Binary data inserted for `string` type on column `cover_content_type`
+  [1m[35mSQL (0.3ms)[0m  UPDATE "books" SET "cover_content_type" = ?, "cover_file_name" = ?, "cover_file_size" = ?, "cover_updated_at" = ?, "updated_at" = ? WHERE "books"."id" = 9  [["cover_content_type", "image/png"], ["cover_file_name", "Capture_du_2015-11-30_10_51_12.png"], ["cover_file_size", 117444], ["cover_updated_at", "2015-12-01 15:07:59.306782"], ["updated_at", "2015-12-01 15:07:59.628833"]]
+  [1m[36m (161.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/books/9
+Completed 302 Found in 504ms (ActiveRecord: 162.8ms)
+
+
+Started GET "/books/9" for 127.0.0.1 at 2015-12-01 16:07:59 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mBook Load (0.1ms)[0m  SELECT  "books".* FROM "books"  WHERE "books"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered books/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 62ms (Views: 59.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2015-12-01 16:07:59 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-01 16:07:59 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-01 16:07:59 +0100
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-12-01 16:08:00 +0100
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-01 16:08:00 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-01 16:08:00 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-01 16:08:00 +0100
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2015-12-01 16:08:00 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-12-01 16:08:00 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-01 16:08:00 +0100
+
+
+Started GET "/books" for 127.0.0.1 at 2015-12-01 16:08:02 +0100
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  Rendered books/_books.html.erb (4.0ms)
+  Rendered books/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 56ms (Views: 52.5ms | ActiveRecord: 0.8ms)
