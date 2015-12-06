@@ -1,6 +1,7 @@
 class Book < ActiveRecord::Base
 	belongs_to :user
 	belongs_to :situation
+	has_many :comments
 
 
 	#Les restrictions
@@ -17,7 +18,7 @@ class Book < ActiveRecord::Base
 	#Les covers
 	has_attached_file :cover, 
 	 	:styles => { 
-	 	 :medium => "200x100>", 
+	 	 :medium => "400x200>", 
 	 	 :thumb => "100x50#" 
 	 	}, 
 	 	:default_url => "/images/:style/missing.png"

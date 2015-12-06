@@ -6,6 +6,7 @@ LibraryOnline::Application.routes.draw do
   devise_for :users
 
   resources :books do
+    resources :comments
     collection do
       get 'available'
       get 'reserved'

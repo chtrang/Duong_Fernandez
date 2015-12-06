@@ -21,10 +21,15 @@
 </p>
 <%= image_tag @book.cover.url(:medium) %>
 
-
-
-
 <p>
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
 </p>
+
+<hr />
+<%= render 'comments' %>
+<hr />
+
+<h2>New comment</h2>
+<%= render 'comments/form' %>
+</br>
