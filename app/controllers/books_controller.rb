@@ -1,7 +1,5 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
-  before_filter :authenticate_user!
-
 
   # GET /books
   # GET /books.json
@@ -53,7 +51,6 @@ class BooksController < ApplicationController
     @book.save
     redirect_to '/books/reserved'
   end
-
 
 
   # POST /books

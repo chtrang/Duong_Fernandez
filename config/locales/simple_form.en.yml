@@ -29,3 +29,10 @@ en:
     # prompts:
     #   defaults:
     #     age: 'Select your age'
+  helpers:
+    submit:
+      book:
+        create: "Create %{model}"
+        update: "Update %{model}"
+      comment:
+        create: "Create %{model}"

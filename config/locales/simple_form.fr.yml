@@ -1,4 +1,4 @@
-en:
+fr:
   simple_form:
     "yes": 'Oui'
     "no": 'Non'
@@ -29,3 +29,10 @@ en:
     # prompts:
     #   defaults:
     #     age: 'Select your age'
+  helpers:
+    submit:
+      book:
+        create: "Créer un livre"
+        update: "Mettre à jour ce livre"
+      comment:
+        create: "Déposer un commentaire"

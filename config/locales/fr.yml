@@ -48,9 +48,13 @@ fr:
   Books: "Livres"
   Contact_us: "Nous contacter"
   Log_Out: "Se déconnecter"
+  Logged_in_as: "Connecté en tant que "
+  Edit_profile: "Editer mon profil"
+  All_Books_html: <i class=\"icon-th-list\"></i> Tous les livres
   Available_html: <i class=\"icon-th-list\"></i> Livres disponibles
   Reserved_html: <i class=\"icon-th-list\"></i> Livres réservés
   Add_html: <i class=\"icon-plus\"></i> Ajouter un livre
+  Mark_min: "La note du livre doit être comprise entre 0 et 10."
   books:
     created: "Le livre a été créé avec succès."
     updated: "Le livre a été mis à jour avec succès."
@@ -65,7 +69,6 @@ fr:
       mark: '*'
     error_notification:
       default_message: "Merci de vérifier les éléments suivants:"
-  Mark_min: "La note du livre doit être comprise entre 0 et 10."
   activerecord:
     models:
       book: Livre
