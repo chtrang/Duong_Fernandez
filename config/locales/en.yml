@@ -21,4 +21,57 @@
 
 en:
   hello: "Hello world"
+  Listing_Books: "Listing Books"
+  New_Book: "New Book"
+  Available_books: "Available books"
+  Editing_book: "Editing book"
+  Show: "Show"
+  Back: "Back"
+  New_book: "New book"
+  Reserved_books: "Reserved books"
+  author_show: "Author:"
+  mark: "Mark:"
+  cover: "Cover:"
+  New_comment: "New comment"
+  Title: "Title"
+  Author: "Author"
+  Show_home: "Show"
+  Destroy: "Destroy"
+  destroy_confirmation: "Are you sure?"
+  Reserve_it: "Reserve it"
+  Render_it: "Render it"
+  Comments: "Comments"
+  Site_title: "Library Online"
+  Menu_title: "Library Online DUONG FERNANDEZ" 
+  Home: "HOME"
+  Books: "Books"
+  Contact_us: "Contact us"
+  Log_Out: "Log Out"
+  Available_html: <i class=\"icon-th-list\"></i> Available books
+  Reserved_html: <i class=\"icon-th-list\"></i> Reserved books
+  Add_html: <i class=\"icon-plus\"></i> Add book
+  books:
+    created: "Book was successfully created."
+    updated: "Book was successfully updated."
+    destroyed: "Book was successfully destroyed."
+    comment: "Comment was succesfully created."
+  Minimum_characters: "Is too short (minimum 5 characters)."
+  simple_form:
+    "yes": 'Yes'
+    "no": 'No'
+    required:
+      text: 'required'
+      mark: '*'
+    error_notification:
+      default_message: "Please review the problems below:"
+  Mark_min: "The note of the book must be beetween 0 and 10."
+  activerecord:
+    models:
+      book: Book
+    attributes:
+      book:
+        title: Title
+        author: Author
+        cover: Cover
+        note: Mark
 

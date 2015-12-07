@@ -2,7 +2,7 @@
 <hr />
 
 <p>
-  <strong>Author:</strong>
+  <strong><%= t('author_show') %></strong>
   <%= @book.author %>
 </p>
 
@@ -12,24 +12,24 @@
 </p>
 
 <p>
-  <strong>Note:</strong>
+  <strong><%= t('mark') %></strong>
   <%= @book.note %>
 </p>
 
 <p>
-  <strong>Cover:</strong>
+  <strong><%= t('cover') %></strong>
 </p>
 <%= image_tag @book.cover.url(:medium) %>
 
 <p>
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+<%= link_to t('Edit'), edit_book_path(@book) %> |
+<%= link_to t('Back'), books_path %>
 </p>
 
 <hr />
 <%= render 'comments' %>
 <hr />
 
-<h2>New comment</h2>
+<h2><%= t('New_comment') %></h2>
 <%= render 'comments/form' %>
 </br>

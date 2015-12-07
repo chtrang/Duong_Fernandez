@@ -1,7 +1,7 @@
-<h1>Editing book</h1>
+<h1><%= t('Editing_book') %></h1>
 <hr />
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @book %> |
-<%= link_to 'Back', books_path %>
+<%= link_to t('Show'), @book %> |
+<%= link_to t('Back'), books_path %>

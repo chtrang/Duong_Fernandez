@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
 		@book = Book.find(params[:book_id])
 		@comment = @book.comments.new(comment_params)
 		if @comment.save
-			redirect_to @comment.book, notice: 'Comment was succesfully created.'
+			redirect_to @comment.book, notice: I18n.t('books.comment')
 		else
 			render text: 'Error!'
 		end

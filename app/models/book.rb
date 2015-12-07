@@ -5,11 +5,11 @@ class Book < ActiveRecord::Base
 
 
 	#Les restrictions
-	validates :title, presence: true, :length => { minimum: 5 ,message: "Is too short, minimum 5 characters."} , 
+	validates :title, presence: true, :length => { minimum: 5 } , 
 	uniqueness: {message: "The title of the book must be unique."}
-	validates :author, presence: true, :length => { minimum: 5 ,message: "Is too short, minimum 5 characters."}
-	validates :synopsis, presence: true, :length => { minimum: 5 ,message: "Is too short, minimum 5 characters."}  
-	validates :note, :inclusion => {:in => (0..10), message: "The note of the book must be beetween 0 and 10."} 
+	validates :author, presence: true, :length => { minimum: 5 }
+	validates :synopsis, presence: true, :length => { minimum: 5 }  
+	validates :note, :inclusion => {:in => (0..10), message: I18n.t('Mark_min') } 
 	
 	#Les scopes
 	scope :available, -> { where(user_id: nil) }

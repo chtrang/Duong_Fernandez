@@ -1,12 +1,12 @@
-<h1>Reserved books</h1>
+<h1><%= t('Reserved_books') %></h1>
 
 <hr/>
 
 <table class="table table-hover">
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Author</th>
+      <th><%= t('Title') %></th>
+      <th><%= t('Author') %></th>
       <th colspan="4"></th>
     </tr>
   </thead>
@@ -16,10 +16,10 @@
       <tr>
         <td><%= book.title %></td>
         <td><%= book.author %></td>
-        <td><%= link_to 'Show', book, class: 'btn btn-mini btn-primary' %></td>
-        <td><%= link_to 'Edit', edit_book_path(book), class: 'btn btn-default' %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-mini btn-danger' %></td>
-        <td><button type="button" class="btn btn-warning">Render it</button></td>
+        <td><%= link_to t('Show_home'), book, class: 'btn btn-mini btn-primary' %></td>
+        <td><%= link_to t('Edit'), edit_book_path(book), class: 'btn btn-default' %></td>
+        <td><%= link_to t('Destroy'), book, method: :delete, data: { confirm: t('destroy_confirmation') }, class: 'btn btn-mini btn-danger' %></td>
+        <td><button type="button" class="btn btn-warning"><%= t('Render_it') %></button></td>
       </tr>
     <% end %>
   </tbody>

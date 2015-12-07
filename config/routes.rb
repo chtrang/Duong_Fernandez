@@ -1,18 +1,18 @@
 LibraryOnline::Application.routes.draw do
+  scope "(:locale)", locale: /en|fr/ do
+    devise_for :users
 
-  root 'books#index'
-  get 'contact' => 'books#contact'
+    root 'books#index'
+    get 'contact' => 'books#contact'
 
-  devise_for :users
-
-  resources :books do
-    resources :comments
-    collection do
-      get 'available'
-      get 'reserved'
+    resources :books do
+      resources :comments
+      collection do
+        get 'available'
+        get 'reserved'
+      end
     end
   end
-
 
 
   # The priority is based upon order of creation: first created -> highest priority.

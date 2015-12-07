@@ -21,4 +21,57 @@
 
 fr:
   hello: "Hello world"
-
+  Listing_Books: 'Liste des livres'
+  New_Book: "Nouveau livre"
+  Available_books: "Livres disponibles"
+  Editing_book: "Modifier un livre"
+  Show: "Voir le livre"
+  Back: "Retour"
+  New_book: "Nouveau livre"
+  Reserved_books: "Livres réservés"
+  author_show: "Auteur:"
+  mark: "Note:"
+  cover: "Première page:"
+  Edit: "Modifier"
+  New_comment: "Nouveau commentaire"
+  Title: "Titre"
+  Author: "Auteur"
+  Show_home: "Visualiser"
+  Destroy: "Supprimer"
+  destroy_confirmation: "Êtes-vous sûre?"
+  Reserve_it: "Le réserver"
+  Render_it: "Le rendre"
+  Comments: "Commentaires"
+  Site_title: "Librairie en ligne"
+  Menu_title: 'Librairie en ligne DUONG FERNANDEZ'
+  Home: "ACCUEIL"
+  Books: "Livres"
+  Contact_us: "Nous contacter"
+  Log_Out: "Se déconnecter"
+  Available_html: <i class=\"icon-th-list\"></i> Livres disponibles
+  Reserved_html: <i class=\"icon-th-list\"></i> Livres réservés
+  Add_html: <i class=\"icon-plus\"></i> Ajouter un livre
+  books:
+    created: "Le livre a été créé avec succès."
+    updated: "Le livre a été mis à jour avec succès."
+    destroyed: "Le livre a été supprimé avec succès."
+    comment: "Votre commentaire a été ajouté avec succès."
+  Minimum_characters: "Est trop court (minimum 5 caractères)."
+  simple_form:
+    "yes": 'Oui'
+    "no": 'Non'
+    required:
+      text: 'requis'
+      mark: '*'
+    error_notification:
+      default_message: "Merci de vérifier les éléments suivants:"
+  Mark_min: "La note du livre doit être comprise entre 0 et 10."
+  activerecord:
+    models:
+      book: Livre
+    attributes:
+      book:
+        title: Titre
+        author: Auteur
+        cover: Image
+        note: Note
