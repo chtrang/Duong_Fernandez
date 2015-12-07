@@ -1,15 +1,6 @@
 <h1><%= t('Reserved_books') %></h1>
 
-<hr/>
-
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th><%= t('Title') %></th>
-      <th><%= t('Author') %></th>
-      <th colspan="4"></th>
-    </tr>
-  </thead>
+<%= render 'books' %>   
 
   <tbody>
     <% @books.each do |book| %>
@@ -19,7 +10,7 @@
         <td><%= link_to t('Show_home'), book, class: 'btn btn-mini btn-primary' %></td>
         <td><%= link_to t('Edit'), edit_book_path(book), class: 'btn btn-default' %></td>
         <td><%= link_to t('Destroy'), book, method: :delete, data: { confirm: t('destroy_confirmation') }, class: 'btn btn-mini btn-danger' %></td>
-        <td><button type="button" class="btn btn-warning"><%= t('Render_it') %></button></td>
+        <td><%= link_to t('Render_it'), {controller: "books", action: "render_it", :ref_book => book.id} , :class => 'btn btn-mini btn-warning' %></td>
       </tr>
     <% end %>
   </tbody>

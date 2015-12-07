@@ -12,7 +12,7 @@ class Book < ActiveRecord::Base
 	validates :note, :inclusion => {:in => (0..10), message: I18n.t('Mark_min') } 
 	
 	#Les scopes
-	scope :available, -> { where(user_id: nil) }
+	scope :available, -> { where(situation_id: 1) } #situation_id: 1 correspond aux livres disponibles
 	scope :reserved, -> { where(situation_id: 2) } #situation_id: 2 correspond aux livres réservés
 
 	#Les covers

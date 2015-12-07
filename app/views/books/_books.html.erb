@@ -8,23 +8,3 @@
       <th colspan="4"></th>
     </tr>
   </thead>                                                                                                                                                                            
-
-  <tbody>
-    <% @books.each do |book| %>
-      <tr>
-        <td><%= book.title %></td>
-        <td><%= book.author %></td>
-        <td><%= book.situation_id = 1 %></td>
-        <td><%= book.save %></td>
-        <td><%= link_to t('Show_home'), book, class: 'btn btn-mini btn-primary' %></td>
-        <td><%= link_to t('Edit'), edit_book_path(book), class: 'btn btn-default' %></td>
-        <td><%= link_to t('Destroy'), book, method: :delete, data: { confirm: t('destroy_confirmation') }, class: 'btn btn-mini btn-danger' %></td>
-        <td><%= link_to t('Reserve_it'), book, class: "btn btn-mini btn-success" %></td>
-        <td><%= tag "input", { "type" => "button", "value" => "Add Row", "onclick" => book.situation_id = 2 } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-

@@ -36,6 +36,26 @@ class BooksController < ApplicationController
   def edit
   end
 
+
+  def reserve_it
+    @ref_book = params[:ref_book]
+    @book = Book.find(@ref_book)
+    @book.situation_id = 2
+    @book.save
+    redirect_to '/books/available'
+  end
+
+
+  def render_it
+    @ref_book = params[:ref_book]
+    @book = Book.find(@ref_book)
+    @book.situation_id = 1
+    @book.save
+    redirect_to '/books/reserved'
+  end
+
+
+
   # POST /books
   # POST /books.json
   def create
