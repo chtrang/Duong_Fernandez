@@ -5,11 +5,13 @@ LibraryOnline::Application.routes.draw do
     root 'books#index'
     get 'contact' => 'books#contact'
 
+
     resources :books do
       resources :comments
       collection do
         get 'available'
         get 'reserved'
+        get 'all' => 'books#all'
         get 'reserve_it' => 'books#reserve_it'
         get 'render_it' => 'books#render_it'
       end

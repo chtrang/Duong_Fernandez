@@ -1,20 +1,76 @@
-<h1><%= t('Listing_Books') %></h1>
+<!-- Première partie -->
+<div class="jumbotron text-center">
+  <h1><%= t('Site_title') %></h1> 
+  <p><%= t('Our_speciality') %></p> 
+</div>
 
-<%= render 'books' %>
+<!-- Deuxième partie -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Library Online</h2>
+      <p>Here you can reserve books</p>
+      <p>See all comments about books</p>
+      <p>Share your opinion about books</p>
+      <p>Have an idea about a book</p>           
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
 
-  <tbody>
-    <% @books.each do |book| %>
-      <tr>
-        <td><%= book.title %></td>
-        <td><%= book.author %></td>
-        <td><%= link_to t('Show_home'), book, class: 'btn btn-mini btn-primary' %></td>
-        <td><%= link_to t('Edit'), edit_book_path(book), class: 'btn btn-default' %></td>
-        <td><%= link_to t('Destroy'), book, method: :delete, data: { confirm: t('destroy_confirmation') }, class: 'btn btn-mini btn-danger' %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4>      
+      <p><strong>VISION:</strong> Our vision Lorem ipsum..</p>
+    </div>
+  </div>
+</div>
 
-<br>
+<div class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-off"></span>
+      <h4>POWER</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart"></span>
+      <h4>LOVE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock"></span>
+      <h4>JOB DONE</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    </div>
+    <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf"></span>
+      <h4>GREEN</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate"></span>
+      <h4>CERTIFIED</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench"></span>
+      <h4>HARD WORK</h4>
+      <p>Lorem ipsum dolor sit amet..</p>
+    </div>
+  </div>
+</div>
 
-<%= link_to t('New_Book'), new_book_path, class: 'btn btn-default' %>

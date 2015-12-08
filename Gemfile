@@ -61,6 +61,7 @@ gem 'cucumber', '~> 2.1'
 gem 'bcrypt', '~> 3.1', '>= 3.1.10'
 gem 'devise', '~> 3.5', '>= 3.5.2'
 gem 'paperclip'
+gem 'builder'
 
 # group :production do
 # 	#use PostgreSQL as the database for Active Record
