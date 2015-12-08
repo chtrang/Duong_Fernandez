@@ -1,31 +1,49 @@
+<!-- About us-->
 
-  <div class="container-fluid bg-grey text-center ">
-  <h3>THE BAND</h3>
-  <p><em>We love music!</em></p>
-  <p>We have created a fictional band website. Lorem ipsum..</p>
-  <br>
-  <div class="row">
-    <div class="col-sm-6">
-      <p><strong>Name</strong></p><br>
-      <img src="/eli.jpg" class="img-circle person" alt="Random Name">
-    </div>
-    <div class="col-sm-6">
-      <p><strong>Name</strong></p><br>
-      <img src="/maxime.jpg" class="img-circle person" alt="Random Name">
-    </div>
-  </div>
+<div class="jumbotron text-center">
+<h2>ABOUT US</h2><br>
+<p>We are students in an engineer school called ESIEA.</p>
+<p>We very love create website with Ruby on Rails...</p> 
+</div>
+<br>
+
+<div class="container-fluid text-center">
+	<div class="row">
+	  <div class="col-sm-6">
+	    <p class="text-center"><strong>Elisabeth</strong></p><br>
+	    <a href="#demo" data-toggle="collapse">
+	      <img src="/eli.jpg" class="img-circle person" alt="Random Name">
+	    </a>
+	    <div id="demo" class="collapse">
+	      <p>Guitarist and Lead Vocalist</p>
+	      <p>Loves long walks on the beach</p>
+	      <p>Member since 1988</p>
+	    </div>
+	  </div>
+
+	  <div class="col-sm-6">
+	    <p class="text-center"><strong>Maxime</strong></p><br>
+	    <a href="#demo2" data-toggle="collapse">
+	      <img src="/maxime.jpg" class="img-circle person" alt="Random Name">
+	    </a>
+	    <div id="demo2" class="collapse">
+	      <p>Guitarist and Lead Vocalist</p>
+	      <p>Loves long walks on the beach</p>
+	      <p>Member since 1988</p>
+	    </div>
+	  </div>
+	</div>
 </div>
 
-
-
- <div class="container-fluid">
+<!-- Contact -->
+<div class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Ivry-Sur-Seine, FRANCE</p>
       <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> duong.elisabeth@gmail.com</p>
     </div>
     <div class="col-sm-7">
       <div class="row">
@@ -45,32 +63,7 @@
     </div>
   </div>
 </div>
+<br>
 
- <!-- Set height and width with CSS -->
-<div id="googleMap" style="height:400px;width:100%;"></div>
-
-<!-- Add Google Maps -->
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-
-function initialize() {
-var mapProp = {
-center:myCenter,
-zoom:12,
-scrollwheel:false,
-draggable:false,
-mapTypeId:google.maps.MapTypeId.ROADMAP
-};
-
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-position:myCenter,
-});
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+ <!-- Google maps -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.3051708120993!2d2.3756389508128106!3d48.81423851166747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673cccf5cb859%3A0x10ff8b28c767ad3f!2sESIEA+Paris-Ivry+-+Ecole+d&#39;ing%C3%A9nieurs+du+num%C3%A9rique!5e0!3m2!1sfr!2sfr!4v1449598042581" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>

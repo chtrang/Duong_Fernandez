@@ -8,7 +8,7 @@
 					<li><%= link_to t('Menu_title').html_safe, root_path %></li>
 					<li><%= link_to t('Home').html_safe, root_path %></li>
 					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t('Books')%></a>
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#"><%= t('Books')%><span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><%= link_to t('All_Books_html').html_safe, all_books_path %></li>
 							<li><%= link_to t('Available_html').html_safe, available_books_path %></li>
