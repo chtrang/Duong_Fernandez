@@ -34,6 +34,28 @@ footer .glyphicon {
     margin: 25px 0;
     }
   }
+.carousel-control.right, .carousel-control.left {
+    background: none !important;
+	filter: progid:none !important;
+    color: #000000;
+}
+.carousel-indicators li {
+    background-color: #999 !important;
+    background-color: rgba(70,70,70,.25)!important;
+}
+.carousel-indicators li.active {
+    background-color: #444 !important;
+}
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+}
+.item span {
+    font-style: normal;
+}
 </style>
 
 <head>
@@ -41,7 +63,10 @@ footer .glyphicon {
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -57,6 +82,7 @@ footer .glyphicon {
 </body>
 
 <footer class="container-fluid text-center">
+  <br>
   <p><%= t('Website_Made_By')%> Elisabeth & Maxime </p>
 </footer>
 
