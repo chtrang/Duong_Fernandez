@@ -57,6 +57,7 @@ class BooksController < ApplicationController
   # POST /books.json
   def create
     @book = Book.create(book_params)
+    @book.situation_id = 1
 
     respond_to do |format|
       if @book.save
@@ -91,9 +92,6 @@ class BooksController < ApplicationController
       format.html { redirect_to books_url, notice: I18n.t('books.destroyed') }
       format.json { head :no_content }
     end
-  end
-
-  def contact
   end
 
 
