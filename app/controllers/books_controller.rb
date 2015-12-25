@@ -40,7 +40,7 @@ class BooksController < ApplicationController
     @book = Book.find(@ref_book)
     @book.situation_id = 2
     @book.save
-    redirect_to '/books/available'
+    redirect_to '/books/available', notice: I18n.t('books.reserved') 
   end
 
 
@@ -49,9 +49,15 @@ class BooksController < ApplicationController
     @book = Book.find(@ref_book)
     @book.situation_id = 1
     @book.save
-    redirect_to '/books/reserved'
+    redirect_to '/books/reserved', notice: I18n.t('books.rendered')
   end
 
+
+  def send_mail
+  @me= 'duong.elisabeth@gmail.com'
+  WelcomeMailer.welcome_email(@me).deliver
+  redirect_to '/contact', notice: I18n.t('Mail_sent')
+  end
 
   # POST /books
   # POST /books.json
@@ -105,4 +111,5 @@ class BooksController < ApplicationController
     def book_params
       params.require(:book).permit(:title, :author, :synopsis, :cover, :note, :situation_id)
     end
+
 end

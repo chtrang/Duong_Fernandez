@@ -4,6 +4,7 @@ LibraryOnline::Application.routes.draw do
 
     root 'books#index'
     get 'contact' => 'books#contact'
+    get 'send_mail' => 'books#send_mail'
 
 
     resources :books do
@@ -14,6 +15,7 @@ LibraryOnline::Application.routes.draw do
         get 'all' => 'books#all'
         get 'reserve_it' => 'books#reserve_it'
         get 'render_it' => 'books#render_it'
+
       end
     end
   end

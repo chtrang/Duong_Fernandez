@@ -55,10 +55,13 @@ fr:
   Reserved_html: <i class=\"icon-th-list\"></i> Livres réservés
   Add_html: <i class=\"icon-plus\"></i> Ajouter un livre
   Mark_min: "La note du livre doit être comprise entre 0 et 10."
+  Mail_sent: "Votre commentaire a été envoyé avec succès."
   books:
     created: "Le livre a été créé avec succès."
     updated: "Le livre a été mis à jour avec succès."
     destroyed: "Le livre a été supprimé avec succès."
+    reserved: "Le livre a été réservé avec succès."
+    rendered: "Le livre a été rendu avec succès."
     comment: "Votre commentaire a été ajouté avec succès."
   Minimum_characters: "Est trop court (minimum 5 caractères)."
   simple_form:

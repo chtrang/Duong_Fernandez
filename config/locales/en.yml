@@ -54,10 +54,13 @@ en:
   Reserved_html: <i class=\"icon-th-list\"></i> Reserved books
   Add_html: <i class=\"icon-plus\"></i> Add book
   Mark_min: "The note of the book must be beetween 0 and 10."
+  Mail_sent: "Your comment were sent successfully."
   books:
     created: "Book was successfully created."
     updated: "Book was successfully updated."
     destroyed: "Book was successfully destroyed."
+    reserved: "Book was successfully reserved."
+    rendered: "Book was successfully rendered."
     comment: "Comment was succesfully created."
   Minimum_characters: "Is too short (minimum 5 characters)."
   simple_form:
