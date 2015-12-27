@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151206153224) do
+ActiveRecord::Schema.define(version: 20151227021546) do
 
   create_table "books", force: true do |t|
     t.string   "title"
@@ -19,7 +19,6 @@ ActiveRecord::Schema.define(version: 20151206153224) do
     t.string   "synopsis"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "user_id"
     t.string   "cover_file_name"
     t.string   "cover_content_type"
     t.integer  "cover_file_size"
@@ -29,7 +28,6 @@ ActiveRecord::Schema.define(version: 20151206153224) do
   end
 
   add_index "books", ["situation_id"], name: "index_books_on_situation_id"
-  add_index "books", ["user_id"], name: "index_books_on_user_id"
 
   create_table "comments", force: true do |t|
     t.string   "user_name"
