@@ -59,6 +59,14 @@ class BooksController < ApplicationController
   redirect_to '/contact', notice: I18n.t('Mail_sent')
   end
 
+  def delete
+    @ref_book = params[:ref_book]
+    @book = Book.find(@ref_book)
+    @book.destroy
+    redirect_to '/books/all', notice: I18n.t('books.destroyed')
+  end
+
+
   # POST /books
   # POST /books.json
   def create

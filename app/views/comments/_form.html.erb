@@ -1,7 +1,7 @@
 <%= form_for [@book, @comment] do |f| %>
 
 	<%= f.hidden_field :book_id %>
-	<%= f.text_field :user_name, :placeholder => "user name" %>
+	<%= f.text_field :reader_id, :placeholder => "reader id" %>
 	<br />
 	<%= f.text_area :message %>
 	<br />

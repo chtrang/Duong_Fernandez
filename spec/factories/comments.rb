@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :comment do
-    user_name "MyString"
+    reader_id "MyString"
 message "MyText"
   end
 

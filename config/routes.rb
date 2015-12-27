@@ -1,5 +1,7 @@
 LibraryOnline::Application.routes.draw do
+
   scope "(:locale)", locale: /en|fr/ do
+    resources :readers
     devise_for :users
 
     root 'books#index'
@@ -15,6 +17,7 @@ LibraryOnline::Application.routes.draw do
         get 'all' => 'books#all'
         get 'reserve_it' => 'books#reserve_it'
         get 'render_it' => 'books#render_it'
+        get 'delete' => 'books#delete'
 
       end
     end

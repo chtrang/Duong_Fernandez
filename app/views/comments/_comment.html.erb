@@ -1,4 +1,5 @@
-<% if comment.user_name != nil %>
-<li><p><%= comment.user_name %></p></li>
+<% if comment.reader_id != nil %>
+<li><strong><%= link_to comment.reader.name, comment.reader %></strong></li>
 <p><%= comment.message %></p>
 <% end %>
+

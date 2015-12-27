@@ -1,7 +1,7 @@
 class Book < ActiveRecord::Base
 	belongs_to :user
-	belongs_to :situation
 	has_many :comments
+	has_many :readers, through: :comments
 
 
 	#Les restrictions
