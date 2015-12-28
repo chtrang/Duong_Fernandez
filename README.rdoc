@@ -1,5 +1,19 @@
 == README
 
+Ici, vous pouvez réserver et rendre des livres. 
+Lire le synopsis d'un livre. 
+Regarder la couverture d'un livre. 
+Regarder les premières pages d'un livre. 
+Vous pouvez aussi ajouter un livre si vous le souhaitez. 
+Regarder tous les commentaires sur tous les livres. 
+Partager votre opinion à propos d'un livre. 
+Vous faire une idée sur un livre avant de le lire. 
+Vous pouvez aussi regarder tous les livres que les autres utilisateurs ont déjà lu. 
+Le site est disponible autant qu'en Français, qu'en Anglais avec I18n. C
+e site est développé avec Ruby en utilisant toutes les conventions et les spécificités du framework Rails et du développement web en général: plusieurs associations entre modèles (has_many, belongs_to, has_one, has_many through), I18n, déploiement avec Heroku, Devise, concept DRY, requête JSON & XML, bases de données Sqlite, Scope, Validates, Javascript & CSS, Stylesheet... 
+
+-----------------------------------------------------------------------------------------
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
