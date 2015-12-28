@@ -1,81 +1,5 @@
 <!DOCTYPE html>
 <html>
-<style>
-footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #f4511e;
-	}
-h2 {
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #303030;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-h4 {
-  font-size: 19px;
-  line-height: 1.375em;
-  color: #303030;
-  font-weight: 400;
-  margin-bottom: 30px;
-}  
-.container-fluid {
-	padding: 10px 10px;
-	}
-.bg-grey {
-	background-color: #f6f6f6;
-	}
-.person {
-	border: 10px solid transparent;
-	margin-bottom: 25px;
-	width: 50%;
-	height: 50%;
-	opacity: 1;
-	}	
-.person:hover {
-	border-color: #f1f1f1;
-	}
-.jumbotron {
-    padding: 100px 50px;
-    font-family: Montserrat, sans-serif;
-  }
-.logo-small {
-    font-size: 50px;
-	}
-.logo {
-    font-size: 200px;
-	}
-@media screen and (max-width: 768px) {
-    .col-sm-4 {
-    text-align: center;
-    margin: 25px 0;
-    }
-  }
-.carousel-control.right, .carousel-control.left {
-    background: none !important;
-	filter: progid:none !important;
-    color: #000000;
-}
-.carousel-indicators li {
-    background-color: #999 !important;
-    background-color: rgba(70,70,70,.25)!important;
-}
-.carousel-indicators li.active {
-    background-color: #444 !important;
-}
-.item h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 70px 0;
-}
-.item span {
-    font-style: normal;
-}
-</style>
-
 <head>
   <title><%= t('Site_title') %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -87,6 +11,90 @@ h4 {
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <style>
+    body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .container-fluid {
+  	padding: 60px 50px;
+  	}
+  .container-book {
+  padding: 20px 10px;
+  }
+  .bg-grey {
+  	background-color: #f6f6f6;
+  	}
+  .person {
+  	border: 10px solid transparent;
+  	margin-bottom: 25px;
+  	width: 50%;
+  	height: 50%;
+  	opacity: 1;
+  	}	
+  .person:hover {
+  	border-color: #f1f1f1;
+  	}
+  .jumbotron {
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+    }
+  .logo-small {
+      font-size: 50px;
+  	}
+  .logo {
+      font-size: 200px;
+  	}
+  @media screen and (max-width: 768px) {
+      .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+      }
+    }
+  .carousel-control.right, .carousel-control.left {
+      background: none !important;
+  	filter: progid:none !important;
+      color: #000000;
+  }
+  .carousel-indicators li {
+      background-color: #999 !important;
+      background-color: rgba(70,70,70,.25)!important;
+  }
+  .carousel-indicators li.active {
+      background-color: #444 !important;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+
+  </style>
 </head>
 
 <body>
