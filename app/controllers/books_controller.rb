@@ -55,7 +55,7 @@ class BooksController < ApplicationController
 
   def send_mail
   @me= 'duong.elisabeth@gmail.com'
-  WelcomeMailer.welcome_email(@me).deliver
+  ContactMailer.contact_email(@me).deliver
   redirect_to '/contact', notice: I18n.t('Mail_sent')
   end
 
