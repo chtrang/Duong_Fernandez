@@ -1,25 +1,31 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 
-  # GET /books
-  # GET /books.json
+  # GET /books/all
+  # GET /books/all.json
+  # GET /books/all.xml
   def all
     @books = Book.all
   end
 
 
   # GET /books/available
+  # GET /books/available.json
+  # GET /books/available.xml
   def available
     @books = Book.available
   end
 
   # GET /books/reserved
+  # GET /books/reserved.json
+  # GET /books/reserved.xml
   def reserved
     @books = Book.reserved
   end
 
   # GET /books/1
   # GET /books/1.json
+  # GET /books/1.xml
   def show
     @comments = @book.comments
     @comment = @book.comments.new 

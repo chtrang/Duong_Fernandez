@@ -18,6 +18,7 @@ LibraryOnline::Application.routes.draw do
         get 'reserve_it' => 'books#reserve_it'
         get 'render_it' => 'books#render_it'
         get 'delete' => 'books#delete'
+        get 'page' =>'books#page'
 
       end
     end
