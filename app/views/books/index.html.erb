@@ -8,10 +8,10 @@
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
-      <h2>ABOUT LIBRARY ONLINE</h2><br>
+      <h2><%= t('ABOUT_LIBRARY_ONLINE') %></h2><br>
 
-      <h4>This Library Online DUONG FERNANDEZ is the future library. </h4><br>
-      <p>Here you can reserve and render books. Read the synopsis of a book. See the cover of a book. See the first pages of a book. You can also add book if you want. See all comments about all books. Share your opinion about books. You can have an idea about a book before read it. You can also see all the books that the others users have already read.The site is available both in French and in English with I18n. This website is developed with Ruby using all the convention and the specificity of the framework Rails and web development in general : many associations beetween models (has_many, belongs_to, has_one, has_many through), I18n, deployed with Heroku, Devise, concept DRY, JSON & XML request, database Sqlite, Scope, Validates, Javascript & CSS, Stylesheet...  </p><br>
+      <h4><%= t('Future_Library') %> </h4><br>
+      <p><%= t('Description_About') %> </p><br>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-signal logo"></span>
@@ -26,9 +26,9 @@
       <span class="glyphicon glyphicon-globe logo slideanim"></span>
     </div>
     <div class="col-sm-8">
-      <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> We are recognised for services and collections that promote and support world-class research and scholarship. Innovative and flexibly delivered Library support services are the hallmarks of an enriched student experience. Our people are agile, future-focused and work together as one outstanding enterprise in the pursuit of excellence.</h4><br>      
-      <p><strong>VISION:</strong> We will be acclaimed for our expertise and collaboration in supporting esteemed research and scholarship, and for transforming the way people discover and engage with information.</p>
+      <h2><%= t('Our_Values') %></h2><br>
+      <h4><strong>MISSION:</strong><%= t('Our_Mission') %></h4><br>      
+      <p><strong>VISION:</strong><%= t('Our_Vision') %></p>
     </div>
   </div>
 </div>
@@ -38,23 +38,23 @@
 <!-- What we offer -->
 <div id="services" class="container-fluid text-center">
   <h2>SERVICES</h2>
-  <h4>What we offer</h4>
+  <h4><%= t('What_we_offer') %></h4>
   <br>
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-off logo-small"></span>
       <h4>POWER</h4>
-      <p>We make the website more powerful...</p>
+      <p><%= t('POWER') %></p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-heart logo-small"></span>
       <h4>LOVE</h4>
-      <p>We are passionate in our books...</p>
+      <p><%= t('LOVE') %></p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-lock logo-small"></span>
       <h4>JOB DONE</h4>
-      <p>We perform a job well done for your satisfaction...</p>
+      <p><%= t('JOB_DONE') %></p>
     </div>
   </div>
   <br><br>
@@ -62,17 +62,17 @@
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-leaf logo-small"></span>
       <h4>GREEN</h4>
-      <p>We make an effort for the environnement...</p>
+      <p><%= t('GREEN') %></p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-certificate logo-small"></span>
       <h4>CERTIFIED</h4>
-      <p>We certify the quality of our books...</p>
+      <p><%= t('CERTIFIED') %></p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-wrench logo-small"></span>
       <h4 style="color:#303030;">HARD WORK</h4>
-      <p>We work hard for your service...</p>
+      <p><%= t('HARD_WORK') %></p>
     </div>
   </div>
 </div>
@@ -81,7 +81,7 @@
 
 <!-- What our customers says -->
 <div class="container-fluid text-center bg-grey">
-	 <h2>What our customers say</h2>
+	 <h2><%= t('What_our_customers_say') %></h2>
 	<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">

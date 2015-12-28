@@ -82,4 +82,17 @@ en:
         note: Mark
   Website_Made_By: "Website Made By "
   Our_speciality: "We are specialized in books"
-
+  ABOUT_LIBRARY_ONLINE: "ABOUT LIBRARY ONLINE"
+  Future_Library: "This Library Online DUONG FERNANDEZ is the future library."
+  Description_About: "Here you can reserve and render books. Read the synopsis of a book. See the cover of a book. See the first pages of a book. You can also add book if you want. See all comments about all books. Share your opinion about books. You can have an idea about a book before read it. You can also see all the books that the others users have already read.The site is available both in French and in English with I18n. This website is developed with Ruby using all the convention and the specificity of the framework Rails and web development in general : many associations beetween models (has_many, belongs_to, has_one, has_many through), I18n, deployed with Heroku, Devise, concept DRY, JSON & XML request, database Sqlite, Scope, Validates, Javascript & CSS, Stylesheet... "
+  Our_Values: "Our Values"
+  Our_Mission: " We are recognised for services and collections that promote and support world-class research and scholarship. Innovative and flexibly delivered Library support services are the hallmarks of an enriched student experience. Our people are agile, future-focused and work together as one outstanding enterprise in the pursuit of excellence."
+  Our_Vision: " We will be acclaimed for our expertise and collaboration in supporting esteemed research and scholarship, and for transforming the way people discover and engage with information."
+  What_we_offer: "What we offer"
+  POWER: "We make the website more powerful..."
+  LOVE: "We are passionate in our books..."
+  JOB_DONE: "We perform a job well done for your satisfaction..."
+  GREEN: "We make an effort for the environnement..."
+  CERTIFIED: "We certify the quality of our books..."
+  HARD_WORK: "We work hard for your service..."
+  What_our_customers_say: "What our customers say"
