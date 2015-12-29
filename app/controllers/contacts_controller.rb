@@ -21,10 +21,6 @@ class ContactsController < ApplicationController
 		redirect_to '/contact'
 	end
 
-	def refresh
-		redirect_to '/contact'
-	end
-
 	private
 
 	def contact_params
