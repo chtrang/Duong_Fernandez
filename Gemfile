@@ -15,6 +15,7 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor' #Heroku
+  gem 'rails_serve_static_assets'
 end
 
 #gem 'sass-rails', '~> 4.0.3'
@@ -57,4 +58,5 @@ gem 'rspec', '~> 3.3'
 gem 'factory_girl_rails', '~> 4.5'
 gem 'capybara', '~> 2.5'
 gem 'email_spec', '~> 1.6'
+
 
