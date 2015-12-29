@@ -29,7 +29,6 @@ class BooksController < ApplicationController
   def show
     @comments = @book.comments
     @comment = @book.comments.new
-    respond_with(@book)
   end
 
   # GET /books/new
