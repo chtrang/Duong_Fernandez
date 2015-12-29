@@ -28,7 +28,8 @@ class BooksController < ApplicationController
   # GET /books/1.xml
   def show
     @comments = @book.comments
-    @comment = @book.comments.new 
+    @comment = @book.comments.new
+    respond_with(@books)
   end
 
   # GET /books/new
