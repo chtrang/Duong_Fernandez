@@ -16,7 +16,7 @@
 							<li><%= link_to t('Add_html').html_safe, new_book_path %></li>
 						</ul>
 					</li>
-					<li><%= link_to t('Contact_us').html_safe, contact_path %></li>
+					<li><%= link_to t('Contact_us'), contactUs_path %></li>
 				</ul>
 				<ul class="navbar-text pull-right">
 					<% if user_signed_in? %>

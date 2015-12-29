@@ -3,9 +3,11 @@ LibraryOnline::Application.routes.draw do
   scope "(:locale)", locale: /en|fr/ do
     resources :readers
     devise_for :users
+    resources :contacts
+
 
     root 'books#index'
-    get 'contact' => 'books#contact'
+    get 'contact' => 'contacts#contact', as: :contactUs
     get 'send_mail' => 'books#send_mail'
 
 
@@ -18,7 +20,6 @@ LibraryOnline::Application.routes.draw do
         get 'reserve_it' => 'books#reserve_it'
         get 'render_it' => 'books#render_it'
         get 'delete' => 'books#delete'
-        get 'page' =>'books#page'
 
       end
     end

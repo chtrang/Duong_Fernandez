@@ -59,11 +59,11 @@ class BooksController < ApplicationController
   end
 
 
-  def send_mail
-  @me= 'duong.elisabeth@gmail.com'
-  ContactMailer.contact_email(@me).deliver
-  redirect_to '/contact', notice: I18n.t('Mail_sent')
-  end
+  # def send_mail
+  # @me= 'duong.elisabeth@gmail.com'
+  # ContactMailer.contact_email(@me).deliver
+  # redirect_to '/contact', notice: I18n.t('Mail_sent')
+  # end
 
   def delete
     @ref_book = params[:ref_book]

@@ -84,7 +84,7 @@ en:
   Our_speciality: "We are specialized in books"
   ABOUT_LIBRARY_ONLINE: "ABOUT LIBRARY ONLINE"
   Future_Library: "This Library Online DUONG FERNANDEZ is the future library."
-  Description_About: "Here you can reserve and render books. Read the synopsis of a book. See the cover of a book. See the first pages of a book. You can also add book if you want. See all comments about all books. Share your opinion about books. You can have an idea about a book before read it. You can also see all the books that the others users have already read.The site is available both in French and in English with I18n. This website is developed with Ruby using all the convention and the specificity of the framework Rails and web development in general : many associations beetween models (has_many, belongs_to, has_one, has_many through), I18n, deployed with Heroku, Devise, concept DRY, JSON & XML request, database Sqlite, Scope, Validates, Javascript & CSS, Stylesheet... "
+  Description_About: "Here you can reserve and render books. Read the synopsis of a book. See the cover of a book. See the first pages of a book. You can also add book if you want. See all comments about all books. Share your opinion about books. You can have an idea about a book before read it. You can also see all the books that the others users have already read.The site is available both in French and in English with I18n. This website is developed with Ruby using all the convention and the specificity of the framework Rails and web development in general : many associations beetween models (has_many, belongs_to, has_one, has_many through), I18n, deployed with Heroku, Devise, concept DRY, JSON & XML request, database Sqlite, Scope, Validates, Mailers, Javascript & CSS, Stylesheet... "
   Our_Values: "Our Values"
   Our_Mission: " We are recognised for services and collections that promote and support world-class research and scholarship. Innovative and flexibly delivered Library support services are the hallmarks of an enriched student experience. Our people are agile, future-focused and work together as one outstanding enterprise in the pursuit of excellence."
   Our_Vision: " We will be acclaimed for our expertise and collaboration in supporting esteemed research and scholarship, and for transforming the way people discover and engage with information."
@@ -111,3 +111,4 @@ en:
   Maxime3: "Born in 1993"
   Contact24H: "Contact us and we'll get back to you within 24 hours."
   See_pages: "See pages"
+  Send: "Send"

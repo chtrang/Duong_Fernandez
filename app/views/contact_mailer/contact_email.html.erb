@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <p>Thank you for your comment in our Library Online!</p>
+  <p>Thank you <strong><%= @contact.name %></strong> for your comment in our Library Online!</p>
+  <br>
+
+  <p>Name: <strong><%= @contact.name %></strong></p>
+  <p>Email: <strong><%= @contact.email %></strong></p>
+  <p>Comment: <strong><%= @contact.comment %></strong></p>
+  <br>
+  
   <p>Log in: <%= link_to 'library-online-duofer.herokuapp.com', 'library-online-duofer.herokuapp.com' %></p>
 </body>
 </html>
