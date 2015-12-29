@@ -8,6 +8,7 @@ LibraryOnline::Application.routes.draw do
 
     root 'books#index'
     get 'contact' => 'contacts#contact', as: :contactUs
+    get 'refresh' => 'contacts#refresh'
     get 'send_mail' => 'books#send_mail'
 
 
