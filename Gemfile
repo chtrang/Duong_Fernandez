@@ -2,18 +2,16 @@ source 'https://rubygems.org'
 
 ruby '2.2.3'
 
-gem 'pg'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 
 #modifie
-# group :development do
-#   gem 'sqlite3'
-# end
-# group :production do
-#   gem 'pg'
-# end
+group :development do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+end
 
 
 # Use SCSS for stylesheets
