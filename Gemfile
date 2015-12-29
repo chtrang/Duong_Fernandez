@@ -67,11 +67,6 @@ gem 'devise', '~> 3.5', '>= 3.5.2'
 gem 'paperclip'
 gem 'builder'
 
-# group :production do
-# 	#use PostgreSQL as the database for Active Record
-# 	gem 'pg', '~> 0.18.4'
-# end
-
 
 #group :test, :development do
 	# RSpec
