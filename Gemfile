@@ -73,11 +73,11 @@ gem 'builder'
 # end
 
 
-group :test, :development do
+#group :test, :development do
 	# RSpec
 	gem 'rspec-rails',      ">= 2.0.0.beta"
 	gem 'rspec', '~> 3.3'
 	gem 'factory_girl_rails', '~> 4.5'
 	gem 'capybara', '~> 2.5'
 	gem 'email_spec', '~> 1.6'
-end
+#end
