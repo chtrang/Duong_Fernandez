@@ -11,6 +11,7 @@ group :development do
 end
 group :production do
   gem 'pg'
+  gem 'rails_12factor' #Heroku
 end
 
 
@@ -71,9 +72,6 @@ gem 'builder'
 # 	gem 'pg', '~> 0.18.4'
 # end
 
-group :production do
-	gem 'rails_12factor' # Heroku
-end
 
 group :test, :development do
 	# RSpec
