@@ -51,6 +51,7 @@ gem 'cucumber', '~> 2.1'
 gem 'bcrypt', '~> 3.1', '>= 3.1.10'
 gem 'devise', '~> 3.5', '>= 3.5.2'
 gem 'paperclip'
+gem 'aws-sdk'
 gem 'builder'
 gem 'rspec-rails',      ">= 2.0.0.beta"
 gem 'rspec', '~> 3.3'
