@@ -1,14 +1,16 @@
 LibraryOnline::Application.routes.draw do
 
   scope "(:locale)", locale: /en|fr/ do
-    resources :readers
     devise_for :users
-    resources :contacts
 
+    resources :users do
+      get 'show' => 'users#show'
+    end
+
+    resources :contacts
 
     root 'books#index'
     get 'contact' => 'contacts#contact', as: :contactUs
-    get 'send_mail' => 'books#send_mail'
 
 
     resources :books do

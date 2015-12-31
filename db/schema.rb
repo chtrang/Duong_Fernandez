@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20151228220752) do
     t.text     "message"
     t.string   "username"
     t.integer  "book_id"
-    t.integer  "reader_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -46,13 +46,6 @@ ActiveRecord::Schema.define(version: 20151228220752) do
   create_table "pages", force: true do |t|
     t.integer "number"
     t.integer "word"
-  end
-
-  create_table "readers", force: true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|

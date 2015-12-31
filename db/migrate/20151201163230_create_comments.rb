@@ -4,7 +4,7 @@ class CreateComments < ActiveRecord::Migration
       t.text :message
       t.string :username
       t.integer :book_id
-      t.integer :reader_id
+      t.integer :user_id
 
       t.timestamps
     end

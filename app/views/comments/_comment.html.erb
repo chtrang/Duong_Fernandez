@@ -1,4 +1,4 @@
 <% if comment.message != nil %>
-<li><strong><%= comment.reader.name %></strong></li>
+<li><strong><%= link_to comment.user.email, comment.user %></strong></li>
 <p><%= comment.message %></p>
 <% end %>

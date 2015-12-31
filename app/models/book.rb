@@ -1,6 +1,6 @@
 class Book < ActiveRecord::Base
 	has_many :comments
-	has_many :readers, through: :comments
+	has_many :users, through: :comments
 
 
 	#Les restrictions

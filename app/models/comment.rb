@@ -1,6 +1,6 @@
 class Comment < ActiveRecord::Base
 	belongs_to :book
-	belongs_to :reader
+	belongs_to :user
 
 	validates :book_id, presence: true
 	
