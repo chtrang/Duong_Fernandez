@@ -1,3 +1,5 @@
 class Page < ActiveRecord::Base
-	has_one :book
+	belongs_to :book
+
+
 end

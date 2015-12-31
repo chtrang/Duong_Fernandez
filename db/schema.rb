@@ -44,8 +44,8 @@ ActiveRecord::Schema.define(version: 20151228220752) do
   end
 
   create_table "pages", force: true do |t|
-    t.integer "number"
-    t.integer "word"
+    t.string  "description"
+    t.integer "book_id"
   end
 
   create_table "users", force: true do |t|

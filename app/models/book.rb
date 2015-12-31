@@ -1,6 +1,7 @@
 class Book < ActiveRecord::Base
 	has_many :comments
 	has_many :users, through: :comments
+	has_one :page
 
 
 	#Les restrictions
