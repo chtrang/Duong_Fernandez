@@ -1,5 +1,4 @@
 <% if comment.message != nil %>
-<li><strong><%= current_user.email %></strong></li>
+<li><strong><%= comment.reader.name %></strong></li>
 <p><%= comment.message %></p>
 <% end %>
-

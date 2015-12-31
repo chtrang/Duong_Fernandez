@@ -1,6 +1,8 @@
 <%= form_for [@book, @comment] do |f| %>
 
 	<%= f.hidden_field :book_id %>
+	<%= f.text_field :reader_id, :placeholder => "reader_id (integer)"%>
+	<br />
 	<%= f.text_area :message, :placeholder => "Message" %>
 	<br />
 	<%= f.submit %>

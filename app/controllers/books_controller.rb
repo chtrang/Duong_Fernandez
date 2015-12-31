@@ -44,7 +44,7 @@ class BooksController < ApplicationController
   def reserve_it
     @ref_book = params[:ref_book]
     @book = Book.find(@ref_book)
-    @book.situation_id = 2
+    @book.situation = 2
     @book.save
     redirect_to '/books/available', notice: I18n.t('books.reserved') 
   end
@@ -53,17 +53,11 @@ class BooksController < ApplicationController
   def render_it
     @ref_book = params[:ref_book]
     @book = Book.find(@ref_book)
-    @book.situation_id = 1
+    @book.situation = 1
     @book.save
     redirect_to '/books/reserved', notice: I18n.t('books.rendered')
   end
 
-
-  # def send_mail
-  # @me= 'duong.elisabeth@gmail.com'
-  # ContactMailer.contact_email(@me).deliver
-  # redirect_to '/contact', notice: I18n.t('Mail_sent')
-  # end
 
   def delete
     @ref_book = params[:ref_book]
@@ -77,7 +71,7 @@ class BooksController < ApplicationController
   # POST /books.json
   def create
     @book = Book.create(book_params)
-    @book.situation_id = 1
+    @book.situation = 1
 
     respond_to do |format|
       if @book.save
@@ -123,7 +117,7 @@ class BooksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def book_params
-      params.require(:book).permit(:title, :author, :synopsis, :cover, :note, :situation_id)
+      params.require(:book).permit(:title, :author, :synopsis, :cover, :note, :situation)
     end
 
 end

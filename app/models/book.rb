@@ -1,5 +1,4 @@
 class Book < ActiveRecord::Base
-	belongs_to :user
 	has_many :comments
 	has_many :readers, through: :comments
 
@@ -12,8 +11,8 @@ class Book < ActiveRecord::Base
 	validates :note, :inclusion => {:in => (0..10), message: I18n.t('Mark_min') } 
 	
 	#Les scopes
-	scope :available, -> { where(situation_id: 1) } #situation_id: 1 correspond aux livres disponibles
-	scope :reserved, -> { where(situation_id: 2) } #situation_id: 2 correspond aux livres réservés
+	scope :available, -> { where(situation: 1) } #situation: 1 correspond aux livres disponibles
+	scope :reserved, -> { where(situation: 2) } #situation: 2 correspond aux livres réservés
 
 	#Les covers
 	has_attached_file :cover, 

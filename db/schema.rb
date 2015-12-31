@@ -17,18 +17,16 @@ ActiveRecord::Schema.define(version: 20151228220752) do
     t.string   "title"
     t.string   "author"
     t.string   "synopsis"
-    t.integer  "page_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
     t.string   "cover_file_name"
     t.string   "cover_content_type"
     t.integer  "cover_file_size"
     t.datetime "cover_updated_at"
     t.integer  "note"
-    t.integer  "situation_id"
+    t.integer  "situation"
+    t.integer  "page_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
-
-  add_index "books", ["situation_id"], name: "index_books_on_situation_id"
 
   create_table "comments", force: true do |t|
     t.text     "message"
