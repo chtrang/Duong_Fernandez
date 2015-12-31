@@ -12,4 +12,3 @@ Rails.application.config.assets.precompile += %w( *.css )
 Rails.application.config.assets.precompile += %w( *.js )
 Rails.application.config.assets.precompile += %w( *.js.coffee )
 Rails.application.config.assets.precompile += %w( *.js.coffee.erb )
-config.assets.precompile =  ['*.js', '*.css', '*.css.erb']
