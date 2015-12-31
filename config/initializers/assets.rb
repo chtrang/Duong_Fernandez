@@ -12,3 +12,4 @@ Rails.application.config.assets.precompile += %w( *.css )
 Rails.application.config.assets.precompile += %w( *.js )
 Rails.application.config.assets.precompile += %w( *.js.coffee )
 Rails.application.config.assets.precompile += %w( *.js.coffee.erb )
+Rails.application.config.assets.precompile += ['bootstrap.min.js', 'bootstrap-theme.min.css', 'bootstrap.min.css', 'simple_form.css.scss', 'user_menus.css.scss']
