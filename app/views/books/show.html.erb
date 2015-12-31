@@ -18,6 +18,11 @@
 
 
 <p>
+  <strong><%= t('cover') %></strong>
+</p>
+<%= image_tag @book.cover.url(:medium) %>
+
+<p>
 <%= link_to t('Edit'), edit_book_path(@book) %> |
 <%= link_to t('Back'), all_books_path %>
 </p>
