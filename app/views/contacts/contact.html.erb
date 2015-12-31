@@ -47,7 +47,6 @@
       <p><span class="glyphicon glyphicon-envelope"></span> duong.elisabeth@gmail.com</p>
     </div>
     <div class="col-sm-7">
-      <div class="row">
         <%= form_for @contact do |f| %>
         <div class="col-sm-6 form-group">
           <%= f.text_field :name , :class=>'form-control', :placeholder=>'Name', :type=>'text', :required=> 'true' %>
@@ -55,8 +54,9 @@
         <div class="col-sm-6 form-group">
           <%= f.text_field :email, :class=>'form-control', :placeholder=>'Email', :type=>'text', :required=> 'true' %>
         </div>
-      </div>
-      <%= f.text_area :comment, :class=>'form-control', :placeholder=>'Comment', :rows=>'5', :required=> 'true' %><br>
+        <div class="col-sm-12 form-group">
+          <%= f.text_area :comment, :class=>'form-control', :placeholder=>'Comment', :rows=>'5', :required=> 'true' %><br>
+        </div>
       <div class="row">
         <div class="col-sm-12 form-group">
           <%= f.submit t('Send'), :class => 'btn btn-default pull-right', url:{controller: "contacts", action: "send_mail"}%>
