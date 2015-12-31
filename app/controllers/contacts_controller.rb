@@ -9,16 +9,11 @@ class ContactsController < ApplicationController
 		@contact = Contact.new(contact_params)
 
 		if @contact.save
-			redirect_to '/contact', notice: I18n.t('Mail_sent')
+			redirect_to contactUs_path, notice: I18n.t('Mail_sent')
 	  		ContactMailer.contact_email(@contact).deliver
 		else
 			render text: 'Error!'
 		end	
-
-	end
-
-	def show
-		redirect_to '/contact'
 	end
 
 	private

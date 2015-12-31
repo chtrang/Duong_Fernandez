@@ -22,10 +22,11 @@
 fr:
   hello: "Hello world"
   Listing_Books: 'Liste des livres'
+  Listing_Users: "Liste des lecteurs"
   New_Book: "Nouveau livre"
   Available_books: "Livres disponibles"
   Editing_book: "Modifier un livre"
-  Show: "Voir le livre"
+  Show: "Visualiser"
   Back: "Retour"
   New_book: "Nouveau livre"
   Reserved_books: "Livres réservés"
@@ -36,7 +37,6 @@ fr:
   New_comment: "Nouveau commentaire"
   Title: "Titre"
   Author: "Auteur"
-  Show_home: "Visualiser"
   Destroy: "Supprimer"
   destroy_confirmation: "Êtes-vous sûre?"
   Reserve_it: "Le réserver"
@@ -49,7 +49,7 @@ fr:
   Contact_us: "Nous contacter"
   Log_Out: "Se déconnecter"
   Logged_in_as: "Connecté en tant que "
-  Edit_profile: "Editer mon profil"
+  Edit_profile: "Mon profil"
   All_Books_html: <i class=\"icon-th-list\"></i> Tous les livres
   Available_html: <i class=\"icon-th-list\"></i> Livres disponibles
   Reserved_html: <i class=\"icon-th-list\"></i> Livres réservés
@@ -113,3 +113,6 @@ fr:
   Contact24H: "Contactez-nous et nous vous répondrons dans les 24 heures."
   See_pages: "Voir pages"
   Send: "Envoyer"
+  Users: "Lecteurs"
+  READERS: "LECTEURS"
+  Book_read: "SES LIVRES DEJA LUS"

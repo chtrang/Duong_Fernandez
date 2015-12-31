@@ -22,6 +22,7 @@
 en:
   hello: "Hello world"
   Listing_Books: "Listing Books"
+  Listing_Users: "Listing Users"
   New_Book: "New Book"
   Available_books: "Available books"
   Editing_book: "Editing book"
@@ -35,7 +36,6 @@ en:
   New_comment: "New comment"
   Title: "Title"
   Author: "Author"
-  Show_home: "Show"
   Destroy: "Destroy"
   destroy_confirmation: "Are you sure?"
   Reserve_it: "Reserve it"
@@ -112,3 +112,6 @@ en:
   Contact24H: "Contact us and we'll get back to you within 24 hours."
   See_pages: "See pages"
   Send: "Send"
+  Users: "Users"
+  READERS: "READERS"
+  Book_read: "HIS BOOKS ALREADY READ"

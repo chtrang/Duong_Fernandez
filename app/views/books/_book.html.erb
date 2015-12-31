@@ -1,6 +1,9 @@
 <div class="book">
 <ul>
+	<% if book.title.exists?=>true %>
 	<li><p><%= book.title %></p></li>
 	<p><%= book.author %></p>
+	<p><%= image_tag book.cover.url(:medium) %></p>
+	<% end %>
 </ul>
 </div>

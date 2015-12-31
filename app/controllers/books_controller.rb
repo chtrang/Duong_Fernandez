@@ -46,7 +46,7 @@ class BooksController < ApplicationController
     @book = Book.find(@ref_book)
     @book.situation = 2
     @book.save
-    redirect_to '/books/available', notice: I18n.t('books.reserved') 
+    redirect_to available_books_path, notice: I18n.t('books.reserved') 
   end
 
 
@@ -55,7 +55,7 @@ class BooksController < ApplicationController
     @book = Book.find(@ref_book)
     @book.situation = 1
     @book.save
-    redirect_to '/books/reserved', notice: I18n.t('books.rendered')
+    redirect_to reserved_books_path, notice: I18n.t('books.rendered')
   end
 
 
@@ -63,7 +63,7 @@ class BooksController < ApplicationController
     @ref_book = params[:ref_book]
     @book = Book.find(@ref_book)
     @book.destroy
-    redirect_to '/books/all', notice: I18n.t('books.destroyed')
+    redirect_to all_books_path, notice: I18n.t('books.destroyed')
   end
 
 

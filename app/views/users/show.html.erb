@@ -1,3 +1,4 @@
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -7,5 +8,8 @@
 
 <hr />
 
-<h1>HIS BOOKS ALREADY READ</h1>
+<h1><%= t('Book_read') %></h1>
 <%= render @books %>
+
+<br>
+<%= link_to t('Back'), users_path %>
